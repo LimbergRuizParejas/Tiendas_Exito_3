@@ -1,0 +1,72 @@
+.brand-list {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .brand-list h1 {
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .brand-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .brand-table th,
+  .brand-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .brand-table th {
+    background-color: #d32f2f;
+    color: #fff;
+  }
+  
+  .brand-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .brand-table .brand-logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn.primary {
+    background-color: #d32f2f;
+    color: #fff;
+  }
+  
+  .btn.warning {
+    background-color: #ff9800;
+    color: #fff;
+  }
+  
+  .btn.danger {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  

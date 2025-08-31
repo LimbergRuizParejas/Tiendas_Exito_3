@@ -1,0 +1,92 @@
+.navbar {
+    background-color: #d32f2f; /* Rojo oscuro */
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto moderno */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    gap: 10px;
+  }
+  
+  .navbar-logo-img {
+    height: 50px; /* Ajusta el tamaño del logo según tus necesidades */
+    width: auto;
+    display: block;
+    border-radius: 5px; /* Redondear ligeramente las esquinas del logo */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ligera al logo */
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease; /* Animación para un hover más suave */
+  }
+  
+  .navbar-menu li:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento */
+  }
+  
+  .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco translúcido al pasar el mouse */
+    text-decoration: none;
+  }
+  
+  .navbar-menu li a.active {
+    background-color: rgba(255, 255, 255, 0.4); /* Fondo blanco más sólido para la página activa */
+    font-weight: bold;
+  }
+  
+  .navbar .btn-login {
+    background-color: #fff;
+    color: #d32f2f;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .btn-login:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #a62828; /* Un rojo más oscuro */
+    transform: scale(1.1); /* Efecto de agrandamiento */
+  }
+  

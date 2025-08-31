@@ -1,0 +1,272 @@
+.product-detail-page {
+  font-family: 'Arial', sans-serif;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Imagen */
+.product-image {
+  flex: 1 1 40%;
+  min-width: 300px;
+  text-align: center;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Info */
+.product-info {
+  flex: 1 1 50%;
+}
+
+.product-info h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-info .sku {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.product-info .stock {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.product-info .stock .in-stock {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.product-info .stock .out-stock {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Precio */
+.price {
+  margin-bottom: 20px;
+}
+
+.price .old-price {
+  text-decoration: line-through;
+  color: #777;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.price .current-price {
+  font-size: 26px;
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Cantidad + Botón */
+.quantity-cart {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.quantity-cart select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quantity-cart select:focus {
+  border-color: #d32f2f;
+  box-shadow: 0 0 6px rgba(211,47,47,0.3);
+}
+
+.quantity-cart button {
+  flex: 1;
+  padding: 12px;
+  background-color: #d32f2f;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quantity-cart button:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+}
+
+/* Descripción */
+.description {
+  margin-top: 30px;
+}
+
+.description h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Redes sociales */
+.social {
+  margin-top: 20px;
+}
+
+.social span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.social button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social button:hover {
+  color: #d32f2f;
+  transform: scale(1.2);
+}
+
+/* Modal tipo toast */
+.modal-cart-confirm {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 1000;
+  animation: slide-in 0.4s ease forwards;
+  max-width: 320px;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.modal-cart-confirm p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #333;
+}
+
+.modal-cart-confirm .modal-product {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.modal-cart-confirm .modal-product img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-actions a {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-vercarrito {
+  background: #555;
+  color: #fff;
+}
+
+.btn-vercarrito:hover {
+  background: #333;
+}
+
+.btn-pagar {
+  background: #d32f2f;
+  color: #fff;
+}
+
+.btn-pagar:hover {
+  background: #b71c1c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image, .product-info {
+    width: 100%;
+  }
+
+  .quantity-cart {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .quantity-cart button {
+    width: 100%;
+  }
+
+  .modal-cart-confirm {
+    right: 10px;
+    left: 10px;
+    top: auto;
+    bottom: 20px;
+    max-width: none;
+  }
+}

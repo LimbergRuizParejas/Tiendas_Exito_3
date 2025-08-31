@@ -1,0 +1,38 @@
+/* theme.css */
+
+body.light-mode {
+    --background-color: #FFFFFF;
+    --text-color: #333333;
+  }
+  
+  body.dark-mode {
+    --background-color: #181818;
+    --text-color: #F9F9F9;
+  }
+  
+  .header {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    padding: var(--spacing-medium);
+  }
+  
+  .footer {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    padding: var(--spacing-small);
+    text-align: center;
+  }
+  
+  .button {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: var(--border-radius);
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: darken(var(--primary-color), 10%);
+  }
+  

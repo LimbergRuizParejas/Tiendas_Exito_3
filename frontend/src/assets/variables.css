@@ -1,0 +1,23 @@
+/* variables.css */
+
+:root {
+    /* Colores */
+    --primary-color: #4CAF50;
+    --secondary-color: #FF9800;
+    --background-color: #F9F9F9;
+    --text-color: #333333;
+  
+    /* Tipografía */
+    --font-size-base: 16px;
+    --font-size-large: 18px;
+    --font-size-small: 14px;
+  
+    /* Espaciados */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+  
+    /* Bordes */
+    --border-radius: 4px;
+  }
+  

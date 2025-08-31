@@ -1,0 +1,134 @@
+.navbar-user {
+  background-color: #fff;
+  border-bottom: 2px solid #f1f1f1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+/* Menú */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.menu li a:hover {
+  color: #d32f2f;
+}
+
+/* Buscador */
+.search-box {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-box input {
+  border: none;
+  padding: 6px 10px;
+  outline: none;
+  width: 200px;
+}
+
+.search-box button {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* Íconos */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.icons a:hover {
+  color: #d32f2f;
+}
+
+.cart-count {
+  background: #d32f2f;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu, .search-box {
+    display: none;
+  }
+  .navbar-container {
+    justify-content: space-between;
+  }
+}
+.navbar-user {
+  background-color: #d32f2f;
+  padding: 12px 30px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-cart a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.navbar-cart .cart-count {
+  background: white;
+  color: #d32f2f;
+  border-radius: 50%;
+  padding: 2px 8px;
+  margin-left: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.navbar-logo a:hover, .navbar-cart a:hover {
+  text-decoration: underline;
+}
